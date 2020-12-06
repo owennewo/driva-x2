@@ -1,3 +1,5 @@
 *.bck
+*cache
 *.bak
 *.sch-bak
+*autosave*
