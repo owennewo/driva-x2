@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "5.1.8-db9833491~88~ubuntu20.04.1"
+      "Version":     "5.1.9-73d0e3b20d~88~ubuntu20.04.1"
     },
-    "CreationDate":  "2020-12-06T21:40:22+00:00"
+    "CreationDate":  "2021-01-12T21:49:49+00:00"
   },
   "GeneralSpecs":
   {
@@ -19,8 +19,8 @@
     },
     "Size":
     {
-      "X": 100.050,
-      "Y": 50.050
+      "X": 80.150,
+      "Y": 80.150
     },
     "LayerNumber": 4,
     "BoardThickness":  1.600
@@ -41,7 +41,7 @@
       "PadToPad":  0.200,
       "PadToTrack":  0.200,
       "TrackToTrack":  0.200,
-      "MinLineWidth":  0.300,
+      "MinLineWidth":  0.250,
       "TrackToRegion":  0.508,
       "RegionToRegion":  0.508
     }
@@ -66,16 +66,6 @@
     {
       "Path":  "driva-x2-B_Cu.gbr",
       "FileFunction":  "Copper,L4,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "driva-x2-F_Paste.gbr",
-      "FileFunction":  "SolderPaste,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "driva-x2-B_Paste.gbr",
-      "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
@@ -109,10 +99,6 @@
     {
       "Type":  "Legend",
       "Notes":  "Layer F.SilkS"
-    },
-    {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer F.Paste"
     },
     {
       "Type":  "SolderMask",
@@ -152,10 +138,6 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
-    },
-    {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer B.Paste"
     },
     {
       "Type":  "Legend",
