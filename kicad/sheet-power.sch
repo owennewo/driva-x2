@@ -611,9 +611,6 @@ F 3 "" H 8600 2100 50  0001 C CNN
 	1    8600 2100
 	-1   0    0    -1  
 $EndComp
-Connection ~ 8300 2200
-Wire Wire Line
-	8300 2200 8600 2200
 Wire Wire Line
 	8600 2200 8600 2100
 $Comp
@@ -632,7 +629,6 @@ $EndComp
 Connection ~ 6175 2050
 Wire Wire Line
 	8800 2200 8600 2200
-Connection ~ 8600 2200
 Wire Wire Line
 	4975 2050 5150 2050
 Wire Wire Line
@@ -723,4 +719,21 @@ Wire Wire Line
 Connection ~ 4775 2825
 Wire Wire Line
 	4775 2825 5600 2825
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 6021E190
+P 8450 2200
+F 0 "JP1" H 8450 2300 50  0000 C CNN
+F 1 "LDO Solder Bridge" H 8650 2075 50  0000 C CNN
+F 2 "" H 8450 2200 50  0001 C CNN
+F 3 "~" H 8450 2200 50  0001 C CNN
+	1    8450 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2200 8600 2200
+Connection ~ 8600 2200
+Wire Wire Line
+	8350 2200 8300 2200
+Connection ~ 8300 2200
 $EndSCHEMATC
