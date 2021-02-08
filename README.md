@@ -26,5 +26,5 @@ https://github.com/owennewo/driva-x2/tree/main/kicad/gerber
 The BOM and Pick/Place/POS file are here:
 https://github.com/owennewo/driva-x2/tree/main/kicad/assembly
 
-v0.5 - First attempt (partly working - problems with mpu6050, can and LDO)
-v0.9 - Second attempt (fixed above hopefully - awaiting order from JLCPCB)
+ * v0.5 - First attempt (partly working - problems with mpu6050, can and LDO)
+ * v0.9 - Second attempt (fixed above hopefully - awaiting order from JLCPCB)
