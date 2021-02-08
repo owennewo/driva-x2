@@ -6,8 +6,10 @@ This board will cost about $200 for 5 units from JLCPCB. Include are [gerber zip
  - dual motor drivers using 3x btn8982 or ixf0007s
  - each motor has hall and spi port (untested)
  - prog (swd, swdio), can (untested), usart and i2c (untested) ports
- - untested ubg-otg (without 5v attached)
+ - ubg-otg (utested and without 5v attached)
  - onboard mpu6050 for 6 axis imu
+
+Note JLCPCB won't do through hole components therefore all power, motor, comms ports will need to be hand solder as will the 1000uF cap.  
 
 The BOM and Pick/Place/POS file are here:
 https://github.com/owennewo/driva-x2/tree/main/kicad/assembly 
