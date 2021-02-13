@@ -750,62 +750,41 @@ F 3 "" H 1750 3450 50  0001 C CNN
 	1    1750 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Interface_CAN_LIN:TJA1051T-3 U?
-U 1 1 60335B5F
-P 9300 1400
-AR Path="/60335B5F" Ref="U?"  Part="1" 
-AR Path="/6027096C/60335B5F" Ref="U2"  Part="1" 
-F 0 "U2" H 9300 1981 50  0000 C CNN
-F 1 "TJA1051T-3" H 9300 1890 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9300 900 50  0001 C CIN
-F 3 "http://www.nxp.com/documents/data_sheet/TJA1051.pdf" H 9300 1400 50  0001 C CNN
-	1    9300 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	10400 1350 10250 1350
+	10400 1300 10250 1300
 Wire Wire Line
-	10250 1350 10250 1150
+	10250 1300 10250 1100
 $Comp
 L Device:R_Small R?
 U 1 1 60335B67
-P 10100 1400
+P 10100 1350
 AR Path="/60335B67" Ref="R?"  Part="1" 
 AR Path="/6027096C/60335B67" Ref="R14"  Part="1" 
-F 0 "R14" H 10300 1400 50  0000 R CNN
-F 1 "120R+" H 10050 1400 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 10100 1400 50  0001 C CNN
-F 3 "~" H 10100 1400 50  0001 C CNN
-	1    10100 1400
+F 0 "R14" H 10300 1350 50  0000 R CNN
+F 1 "120R+" H 10050 1350 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 10100 1350 50  0001 C CNN
+F 3 "~" H 10100 1350 50  0001 C CNN
+	1    10100 1350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9800 1300 9950 1300
+	9950 1100 10100 1100
 Wire Wire Line
-	9950 1300 9950 1150
+	9950 1600 10100 1600
 Wire Wire Line
-	9950 1150 10100 1150
+	10100 1450 10100 1600
+Connection ~ 10100 1600
 Wire Wire Line
-	9800 1500 9950 1500
+	10100 1600 10250 1600
 Wire Wire Line
-	9950 1500 9950 1650
+	10100 1250 10100 1100
+Connection ~ 10100 1100
 Wire Wire Line
-	9950 1650 10100 1650
+	10100 1100 10250 1100
 Wire Wire Line
-	10100 1500 10100 1650
-Connection ~ 10100 1650
+	10250 1400 10400 1400
 Wire Wire Line
-	10100 1650 10250 1650
-Wire Wire Line
-	10100 1300 10100 1150
-Connection ~ 10100 1150
-Wire Wire Line
-	10100 1150 10250 1150
-Wire Wire Line
-	10250 1450 10400 1450
-Wire Wire Line
-	10250 1450 10250 1650
+	10250 1400 10250 1600
 Text GLabel 8800 1300 0    50   Input ~ 0
 CAN2_RX
 Text GLabel 8800 1200 0    50   Input ~ 0
@@ -854,46 +833,31 @@ Wire Wire Line
 Connection ~ 8800 1800
 Wire Wire Line
 	8800 1800 9300 1800
-Wire Wire Line
-	8800 1800 8800 1600
 $Comp
 L Device:C_Small C?
 U 1 1 60335B93
-P 8700 1650
+P 8600 1575
 AR Path="/60335B93" Ref="C?"  Part="1" 
 AR Path="/6027096C/60335B93" Ref="C21"  Part="1" 
-F 0 "C21" H 8950 1600 50  0000 R CNN
-F 1 "2.2u" H 8950 1700 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8700 1650 50  0001 C CNN
-F 3 "~" H 8700 1650 50  0001 C CNN
-	1    8700 1650
+F 0 "C21" H 8850 1525 50  0000 R CNN
+F 1 "100n" H 8850 1625 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8600 1575 50  0001 C CNN
+F 3 "~" H 8600 1575 50  0001 C CNN
+	1    8600 1575
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8700 1550 8700 1500
-Wire Wire Line
-	8700 1500 8800 1500
-Wire Wire Line
-	8700 1750 8700 1800
-Connection ~ 8700 1800
-Wire Wire Line
-	8700 1800 8800 1800
+Connection ~ 8600 1800
 Wire Wire Line
 	8150 850  8150 1000
 Wire Wire Line
 	8150 1000 8300 1000
 Wire Wire Line
-	8150 1800 8700 1800
-Connection ~ 8700 1500
+	8150 1800 8600 1800
 Wire Wire Line
 	8150 1400 8150 1800
 Wire Wire Line
 	8150 1200 8150 1000
 Connection ~ 8150 1000
-Wire Wire Line
-	8300 1500 8300 1000
-Wire Wire Line
-	8300 1500 8700 1500
 Connection ~ 8300 1000
 Wire Wire Line
 	8300 1000 9300 1000
@@ -951,9 +915,9 @@ Text HLabel 7050 4800 2    50   Input ~ 0
 USART1_RX
 Wire Wire Line
 	6050 4800 7050 4800
-Text HLabel 10400 1350 2    50   Input ~ 0
+Text HLabel 10400 1300 2    50   Input ~ 0
 CAN_H
-Text HLabel 10400 1450 2    50   Input ~ 0
+Text HLabel 10400 1400 2    50   Input ~ 0
 CAN_L
 Text HLabel 7050 5500 2    50   Input ~ 0
 EN_V2
@@ -1224,4 +1188,46 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5350 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Interface_CAN_LIN:SN65HVD230 U2
+U 1 1 60289FE0
+P 9300 1300
+F 0 "U2" H 9300 1781 50  0000 C CNN
+F 1 "SN65HVD230" H 9300 1690 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9300 800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 9200 1700 50  0001 C CNN
+	1    9300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1700 9300 1800
+Wire Wire Line
+	8600 1800 8800 1800
+Wire Wire Line
+	8800 1500 8900 1500
+Wire Wire Line
+	8800 1500 8800 1800
+Wire Wire Line
+	9700 1300 9950 1300
+Wire Wire Line
+	9950 1100 9950 1300
+Wire Wire Line
+	9700 1400 9950 1400
+Wire Wire Line
+	9950 1400 9950 1600
+Wire Wire Line
+	8300 1400 8300 1000
+Wire Wire Line
+	8600 1675 8600 1800
+Wire Wire Line
+	8300 1400 8600 1400
+Wire Wire Line
+	8600 1475 8600 1400
+Connection ~ 8600 1400
+Wire Wire Line
+	8600 1400 8900 1400
+Wire Wire Line
+	8800 1200 8900 1200
+Wire Wire Line
+	8800 1300 8900 1300
 $EndSCHEMATC
